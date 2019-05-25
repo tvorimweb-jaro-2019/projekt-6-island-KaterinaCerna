@@ -6,6 +6,7 @@
  pozadi     #f5f5f5
  Jedeme retro cernobile, dnes barvy nepotrebujeme.
 */
+
 body {
     margin: 0;
     padding: 0;
@@ -14,264 +15,249 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
-/* HLAVICKA */
-.titulek {
-    font-family: 'Raleway', serif;
-}
-/* MENU */
-/* OBSAH */
-/* FOTOGALERIE */
-/* PATICKA */
-/* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
-/*
- BARVY
- pozadi     #f5f5f5
- Jedeme retro cernobile, dnes barvy nepotrebujeme.
-*/
-body {
-		background-color: #f5f5f5;
-		font-family: 'Merriweather', serif;
-		font-size: 16px;
-		margin: 0;
-    padding: 0;    
-    line-height: 1.6;
-}
+
 /* HLAVICKA */
 .hlavicka {
-		color: white;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.322)), url(images/island-hlavicka.jpg);
-    background-size: cover;
-    min-height: 400px;    
-    text-align: center;
-    padding: 25px;
+	color: white;
+	background-image: url(images/island-hlavicka.jpg);
+	background-position: top center;
+	background-size: cover;    
+	text-align: center;
+	height: auto;
+	width: 100%;    
 }
+
 .titulek {
-    font-family: 'Raleway', serif;
-    margin: 10px;
-    font-size: 40px;
+	font-family: 'Raleway', serif;
+	font-size: 45px;
+	margin: 0
 }
-.autor {
-    font-style: italic;
-    margin-top: 30px;
+
+.perex {
+    margin: 0;
+    padding: 10px 20px;
 }
+
 .perex::after {
     content: "______";
     display: block;
-    font-weight: bold;
     transform: translate(0, 50%);
+    font-weight: bold;
 }
+
 /* MENU */
 .menu {
-    margin: 0px 0px 20px 0px;
     padding: 30px;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .menu li {
-    display: inline-block;
-    width: 100%;
-    border-bottom: 1px solid #afafaf;
-}
-.menu a {
-    color: #afafaf;
-		font-family: 'Raleway', serif;
-		text-transform: uppercase;
-    display: inline-block;
-    width: 100%;    
-    text-decoration: none;
     text-align: center;
-    padding: 5px;
+    display: inline-block;
+    border-bottom: 1px solid rgb(240, 240, 240);
 }
+
+.menu a {
+    font-family: 'Raleway', serif; 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(160, 160, 160);
+		padding: 8px;
+		text-align: center
+}
+
 /* OBSAH */
-.soubor {
-    background-color: white;
+.obsah {
+    margin: 0;  
 }
-.soubor img {
-    width: 100%;
+
+.obsah .popisek a {
+	font-size: 10px;
+	font-weight: 200;
+	padding: 8px 0;
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: rgb(160, 160, 160);
 }
-.soubor h2 {
-    font-family: 'Raleway', serif;
-    font-size: 30px;
+
+p {
+	margin: 0;
+	padding-bottom: 16px;
 }
-.uvod, .proc, .comusitevidet, .comusitevidet2, .zaver {
-    padding: 15px 30px;
+
+.popis {
+	padding 30px 20px
 }
-.fotogalerie {
-    padding: 0px 30px;
+
+.popis h2 {
+ font-family: 'Raleway', serif;
+ margin: 0;
+ padding: 10px 30px;
 }
-.soubor .popisek {
-    color: #afafaf;
-		font-family: 'Raleway', serif;
-		font-size: 14px;
-    text-align: center;    
+
+img {
+	width: 100%;
+	display: block;
 }
-.soubor .popisek a {
-    color: #afafaf;
+
+.obrazek .popisek {
+	font-size: 10px;
+	font-weight: 200;
+	padding: 8px 0;
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: rgb(160, 160, 160);
 }
-.soubor h2::after {
-    color: rgb(95, 208, 216);
-		font-family: sans-serif;
-		content: "________";
-    font-size: 30px;
-    display: block;
-    font-weight: bold;    
-    transform: translate(-10%, -30%);
-}
+
 /* FOTOGALERIE */
-.galerie .popisek {
-    font-size: 16px;
-    font-weight: bolder;
-}
-.galerie .popisek-copy {
-    font-size: 14px;
-    font-weight: lighter;
-}
 .galerie {
-    padding-bottom: 20px;
+    margin: 0;
 }
+
+.fotogalerie h2 {
+    margin: 0;
+    padding: 30px 20px 40px;
+}
+
+.foto {
+width: 100%;
+height: auto;
+}
+
+.foto .popisek { 
+	font-family: 'Raleway', serif; 
+	font-size: 12px;
+	font-weight: bold;
+	color: rgb(160, 160, 160);
+	padding: 8px 12px;
+	margin: 0;
+}
+
+.foto span {
+	font-weight: normal;
+	color: rgb(160, 160, 160);
+	font-size: 12px;
+}
+
+.foto .popisek a {
+	font-size: 12px;
+	color: rgb(160, 160, 160);
+	padding: 8px;
+}
+
 /* PATICKA */
 .paticka {
-		color: #afafaf;
-		font-size: 14px;    
-    padding: 15px 30px;
+	font-size: 14px;	
+	font-weight: 400;
+	color: rgb(160, 160, 160);
+	padding: 30px 20px 10px;
 }
-.paticka a {
-    color: #afafaf;
-}
-@media (min-width:500px) {
 
+.paticka a {
+	font-size: 12px;
+	color: rgb(160, 160, 160);
+	padding: 8px;
+	font-weight: 400;
+}
+
+@media (min-width: 500px) {
     .menu {
         display: flex;
     }
+		
+    .menu a {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 4px;  
+		}    
+		
     .menu li {
-        border-top: 1px solid #afafaf;
-        border-right: 1px solid #afafaf;
+        width: calc(100% / 4);
+        border-style: solid;
+        border-color: rgb(240, 240, 240);
+        border-width: 1px 0.5px;
+        padding: 3px;
+        margin: 0;
     }
-    .menu li:last-child {
-        border-right: 0;
-    }
-    .titulek {
-        font-size: 60px;
-    }
-    .soubor h2 {
-        font-size: 40px;
-    }
-    .obrazek1, .obrazek2, .obrazek3 {
-        position: relative;
-    }
-    .obrazek1 p,
-    .obrazek2 p, 
-    .obrazek3 p {
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
-    }
-    .obrazek1 .popisek,
-    .obrazek2 .popisek,
-    .obrazek3 .popisek {
-				color: white;
-				font-size: 12px;        
-    }    
-    .obrazek1 .popisek a,
-    .obrazek2 .popisek a,
-    .obrazek3 .popisek a {
-        color: white;
-        font-size: 12px;
-    }
+
+		.menu li: :first-child {
+			border-left: 0;
+		}
+
+		.menu li: :last-child {
+			border-right: 0;
+		}
+
+		.obrazek {
+			position: relative
+		}
+
+		.obrazek .popisek {
+			position: relative;
+			color: white;
+				}
+
+		.foto {
+			width: 50%;
+			height: 0;
+			box-sizing: content-box;
+			padding-bottom: 28%;
+			overflow: hidden;
+			position: absolute;
+			right: 20px;
+			bottom: 10px;
+		}
+
+		.foto .popisek {
+			color: white;
+			font-size: 12px;
+		}
+
+		.foto .popisek a {
+			color: white;
+			font-size: 12px;
+		}
+
     .galerie {
         display: flex;
         flex-wrap: wrap;
-    }
-    .foto {
-        width: 50%;
-        height: 0;
-        box-sizing: content-box;
-        padding-bottom: 28%;
-        overflow: hidden;
-    }
-    .foto:hover .popisek {
-        transform: translate(0, -100%); 
-        transition: 0.5s;
-    }
-    .galerie .popisek {
-        margin: 0;
-    }
-    .foto:hover img {
-        transform: scale(1.1);
-        transition: 0.5s;
-    }
-    .foto img {
-        display: block; 
-        transition: 0.5s;
-    }
-    .galerie {
-        padding-bottom: 0px;
-    }
-    .foto .popisek {
-        background-color: rgba(0, 0, 0, 0.397); 
-        color: white;
-        text-align: center;
-        padding: 0px;
-        transition: 0.5s;
-        font-size: 14px;    
-    }
-    .foto .popisek-copy {
-        font-size: 12px;
-    }
-    .foto .popisek-copy a {
-        color: white;
-    }
-    .paticka {
-        padding: 0px 20px 0px 20px;
-    }
-}
-@media (min-width:1000px) {
-    .soubor {
-        width: 960px;
-        display: block;
-        margin: auto;
-        transform: translate(0, -1.2%);
-    }
-    .soubor h2::after {
-        color: rgb(95, 208, 216);
-				font-family: sans-serif;
-				content: "________";
-        font-size: 30px;
-        display: block;
-        font-weight: bold;        
-        transform: translate(-3.3%, 0%);
-    }
-    .foto {
-        width: 33.333%;
-        padding-bottom: 18%;
-    }
-    .foto:hover .popisek {
-        transform: translate(0, -110%); 
-    }
+		}
+		
+		.foto:hover .popisek {
+			transform: translate (0, -100%);
+			transition: 0.5s;
+		}
+		.foto:hover img {
+			transform: scale (1.1);
+			transition: 0.5s;
+		}
+
+@media (min-width: 1000px) {
     .menu {
-        float: left;
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        padding: 30px 40px;
-        height: 375.6px;
-    }
-    .menu li {
-        border: 0;
-        border-bottom: 1px solid #afafaf;
-    }
-    .menu a {
-        text-align: left;
-    }
-    .proc {
-        width: 80%;
-    }
-    .comusitevidet, .comusitevidet2 {
-        margin-left: 288px;
-    }
-    .paticka {
         display: block;
-        margin: auto;
-        width: 960px;
+        float: left;
+        padding: 30px 50px 160px 20px;
+    }
+		.menu a {
+			font-size: 10px;
+			padding: 4px;
+	}
+    .menu li {
+        width: 100%;
+        text-align: left;
+        border: 0;
+				border-bottom: 1px solid;
+				border bottom color: rgb(240, 240, 240);
+        padding: 8px;
+    }    
+    .paticka {
         padding: 0;
+        margin: auto;
+				width: 960px;
+				display: block;
     }
 }
